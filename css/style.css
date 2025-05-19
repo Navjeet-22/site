@@ -89,6 +89,9 @@ h3{
     height: 100%;
     width: 0;
 }
+.scroll{
+    padding-left: 200px;
+}
 .scroll-img{
     display: grid;
     grid-template-columns: auto auto auto auto;
