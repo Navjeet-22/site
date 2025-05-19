@@ -1,0 +1,49 @@
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    font-weight: 900;
+}
+.top a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight:lighter;
+    font-size: 12px;
+}
+body{
+    background: url(../images/back.jpg);
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: multiply;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.abc{
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-left: 110px;
+    font-weight: bolder;
+}
+.a{
+    font-weight: lighter;
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-left: 110px;
+}
+.font1{
+    font-family: "Bebas Neue", Sans-serif;
+}
+.font2{
+    font-family: "Roboto", Sans-serif;
+}
+hr{
+    margin-left: 110px;
+    width: 200px;
+    border: 1px thin;
+}
