@@ -91,11 +91,13 @@ h3{
 }
 .scroll{
     padding-left: 200px;
+    padding-right: 200px;
 }
 .scroll-img{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    padding: 50px;
+    justify-content: space-between;
+    
 }
 .scroll-img img{
     width: 181px;
