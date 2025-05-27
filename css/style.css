@@ -1,104 +1,172 @@
-/*body, head, foot, font| section | */
-body{
+/* Hody / Head Styles */
+body {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
 }
-header{
+
+header {
     color: white;
-    background: url(../images/back.jpg);
-    background-color: rgba(0, 0, 0,0.3);
-    background-blend-mode: multiply;
-    padding-bottom: 10px;
+    background-image: linear-gradient(to right, #000000 0%, #00000000 100%), url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
 }
-.font1{
-    font-family: "Bebas Neue", Sans-serif;
+
+/* Fonts */
+.font1 {
+    font-family: "Bebas Neue", sans-serif;
 }
-.font2{
-    font-family: "Roboto", Sans-serif;
+
+.font2 {
+    font-family: "Roboto", sans-serif;
 }
-h3{
+
+/* Headings */
+h3 {
     color: #140748;
+    font-size: 100%;
 }
-.portfolio p{
-    color: #666666;
-    font-size: 16px;
-    padding: 10px;
-}
-.top{
-    background-color: rgba(0, 0, 0,0.5);
+
+/* Navigation baar */
+.top {
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-between;
 }
-.cah{
-    font-size: 40px;
-    padding-left: 15px;
-    margin-bottom: 10px;
+
+.cah {
+    font-size: 180%;
+    padding-left: 2%;
+    margin-bottom: 1%;
 }
-.navbaar a{
+
+.navbaar {
+    margin-top: 3%;
+    margin-right: 4%;
+}
+
+.navbaar a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
-    padding: 10px;
-    margin-right: 20px;
+    font-size: 100%;
+    margin-right: 8px;
 }
-.navbaar{
-    margin-top: 40px;
-}
-.a{
-    padding-left: 200px;
-    padding-top: 50px;
-    font-size: 60px;
+
+/* info Section */
+.a {
+    padding-left: 13%;
+    padding-top: 3%;
+    font-size: 360%;
     font-weight: 800;
 }
-.b{
-    padding-left: 200px;
-    padding-top: 10px;
-    font-size: 25px;
-    padding-bottom: 40px;
+
+.b {
+    padding-left: 13%;
+    padding-top: 1%;
+    font-size: 180%;
+    padding-bottom: 5%;
 }
-.line{
+
+.line {
     border-top: 1px solid gray;
-    width: 600px;
-    margin-left: 200px;
-    padding-top: 40px;
+    width: 50%;
+    margin-left: 13%;
+    padding-top: 5%;
 }
-.logo img{
+
+/* links to social sectin */
+.logo {
+    padding-left: 200px;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.logo img {
     width: 50px;
     padding: 10px;
     border-radius: 20px;
 }
-.logo{
-    padding-left: 200px;
-    display: flex;
-    padding-bottom: 10px;
-}
-.portfolio{
+
+/* Portfolio Section */
+.portfolio {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    padding: 140px;
+    padding: 8%;
     text-align: center;
-    font-size: 22px;
-    margin: 8px 0px 5px;
+    font-size: 130%;
+    margin: 2.5% 0 1%;
 }
-.portfolio img{
-    width: 80px;
+
+.portfolio p {
+    color: #666;
+    font-size: 80%;
+    padding: 1%;
 }
-.devide{
+
+.portfolio img {
+    width: 20%;
+}
+
+.devide {
     border-right: 1px solid gray;
     height: 100%;
     width: 0;
 }
-.scroll{
-    padding-left: 200px;
-    padding-right: 200px;
-}
-.scroll-img{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-between;
-    
-}
-.scroll-img img{
-    width: 181px;
+
+/*  */
+@media only screen and (max-width: 768px) {
+    nav {
+        display: none; /* Hide navbar */
+    }
+
+    header {
+        padding-bottom: 0;
+    }
+
+    /* Push intro text down below header visually */
+    .a, .b, .line {
+        padding-left: 5%;
+        padding-right: 5%;
+        position: relative;
+        top: 100px;
+    }
+
+    .a {
+        font-size: 200%;
+        padding-top: 20px;
+    }
+
+    .b {
+        font-size: 120%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .logo {
+        position: relative;
+        top: 80px;
+        padding-left: 5%;
+        max-width: 100%;
+        justify-content: center;
+        margin-bottom: 15%;
+    }
+
+    .portfolio {
+        grid-template-columns: 1fr;
+        padding: 5% 10%;
+    }
+
+    .portfolio img {
+        width: 60px;
+    }
+
+    .devide {
+        display: none;
+    }
 }
